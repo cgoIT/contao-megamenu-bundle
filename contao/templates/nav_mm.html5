@@ -30,7 +30,6 @@
                 <a href="<?= $item['href']; ?>" title="<?= $item['pageTitle'] ?: $item['title']; ?>"
                    class="<?php if ($item['class']): ?><?= $item['class'] ?><?php endif; ?><?php if ($item['megamenu']): ?> submenu mega-dropdown<?php endif; ?>"
                     <?php if ('' != $item['accesskey']): ?> accesskey="<?= $item['accesskey']; ?>"<?php endif; ?>
-                    <?php if ($item['tabindex']): ?> tabindex="<?= $item['tabindex']; ?>"<?php endif; ?>
                     <?= $item['target']; ?>>
                     <?= $item['link']; ?>
                 </a>
