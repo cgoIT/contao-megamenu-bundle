@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/cgoIT/contao-megamenu-bundle/compare/v1.0.0...v1.0.1) (2024-03-27)
+
+
+### Bug Fixes
+
+* set id and class for megamenu correctly ([a5bf7a2](https://github.com/cgoIT/contao-megamenu-bundle/commit/a5bf7a2d6e2b3a85d0f7012022ddd39da7d9cc01))
+
 ## 1.0.0 (2024-03-27)
 
 
