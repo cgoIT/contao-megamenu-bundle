@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/cgoIT/contao-megamenu-bundle/compare/v1.0.1...v1.0.2) (2024-03-27)
+
+
+### Bug Fixes
+
+* fix template ([ade3cba](https://github.com/cgoIT/contao-megamenu-bundle/commit/ade3cbac37ce9ad3378522d13c372eec0952f01d))
+
 ## [1.0.1](https://github.com/cgoIT/contao-megamenu-bundle/compare/v1.0.0...v1.0.1) (2024-03-27)
 
 
