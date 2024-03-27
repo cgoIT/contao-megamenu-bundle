@@ -10,11 +10,7 @@ declare(strict_types=1);
  * @license    LGPL-3.0-or-later
  */
 
-use Contao\Backend;
 use Contao\CoreBundle\DataContainer\PaletteManipulator;
-use Contao\DataContainer;
-use Contao\Image;
-use Contao\StringUtil;
 
 /*
  * Extend palettes
@@ -35,7 +31,7 @@ $GLOBALS['TL_DCA']['tl_page']['palettes']['__selector__'] = array_merge(
 
 $GLOBALS['TL_DCA']['tl_page']['subpalettes'] = array_merge(
     ['megamenu' => 'mm_article'],
-    $GLOBALS['TL_DCA']['tl_calendar']['subpalettes'],
+    $GLOBALS['TL_DCA']['tl_page']['subpalettes'],
 );
 
 /*
@@ -56,9 +52,6 @@ $GLOBALS['TL_DCA']['tl_page']['fields'] = array_merge(
         'eval' => ['mandatory' => true, 'tl_class' => 'clr wizard'],
         'sql' => 'int(10) unsigned NOT NULL default 0',
         'relation' => ['type' => 'hasOne', 'load' => 'lazy'],
-        'wizard' => [
-            ['tl_page_mm', 'editArticle'],
-        ],
     ]],
     ['mm_col' => [
         'label' => &$GLOBALS['TL_LANG']['tl_page']['mm_col'],
@@ -81,14 +74,5 @@ $GLOBALS['TL_DCA']['tl_page']['fields'] = array_merge(
         'eval' => ['mandatory' => false, 'isBoolean' => true],
         'sql' => "char(1) NOT NULL default ''",
     ]],
+    $GLOBALS['TL_DCA']['tl_page']['fields'],
 );
-
-class tl_page extends Backend
-{
-    public function editArticle(DataContainer $dc): string
-    {
-        $title = sprintf(StringUtil::specialchars($GLOBALS['TL_LANG']['tl_article']['edit']), $dc->value);
-
-        return $dc->value < 1 ? '' : ' <a href="contao?do=article&amp;table=tl_content&amp;id='.$dc->value.'" title="'.$title.'">'.Image::getHtml('alias.svg', $title, 'style="vertical-align:top;"').'</a>';
-    }
-}

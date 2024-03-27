@@ -1,0 +1,17 @@
+.mega-dropdown {
+    backface-visibility: hidden;
+    background: rgba(0, 0, 0, 0.9);
+    display: block;
+    font-size: 0.875em;
+    right: 0;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 100%;
+    transition: max-height 0s ease 0.3s, padding 0s ease 0.3s, opacity 0.3s ease 0s;
+    width: 100%;
+    text-transform: none;
+}
