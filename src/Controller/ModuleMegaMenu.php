@@ -15,6 +15,7 @@ namespace Cgoit\MegaMenuBundle\Controller;
 use Contao\Environment;
 use Contao\ModuleNavigation;
 use Contao\PageModel;
+use Contao\StringUtil;
 
 class ModuleMegaMenu extends ModuleNavigation
 {
@@ -37,10 +38,10 @@ class ModuleMegaMenu extends ModuleNavigation
         }
 
         $row['megamenu'] = $objSubpage->megamenu;
-        $row['megamenu_article'] = $objSubpage->megamenu ? $this->getArticle($objSubpage->mm_article, $blnMultiMode, true, $objSubpage->mm_col) : '';
-        //            $arrCSS = StringUtil::deserialize($objSubpage->mm_cssID, true);
-        $row['megamenu_id'] = $objSubpage->mm_cssID[0];
-        $row['megamenu_class'] = '' !== $objSubpage->mm_cssID[1] ? ' '.$objSubpage->mm_cssID[1] : '';
+        $row['megamenu_article'] = $objSubpage->megamenu ? $this->getArticle($objSubpage->mm_article, $blnMultiMode, true, '') : '';
+        $arrCSS = StringUtil::deserialize($objSubpage->mm_cssID, true);
+        $row['megamenu_id'] = empty($arrCSS) ? '' : $arrCSS[0];
+        $row['megamenu_class'] = !empty($arrCSS) && !empty($arrCSS[1]) ? ' '.$arrCSS[1] : '';
 
         return $row;
     }

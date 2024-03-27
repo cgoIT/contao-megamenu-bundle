@@ -1,7 +1,8 @@
 <ul class="<?= $this->level; ?>" role="menubar">
     <?php foreach ($this->items as $item): ?>
         <?php if ($item['isActive']): ?>
-            <li class="<?php if ($item['class']): ?><?= $item['class']; ?><?php endif; ?><?php if ($item['megamenu']): ?> submenu mega-menu<?php endif; ?>">
+            <li<?php if ($item['megamenu_id']): ?> id="<?= $item['megamenu_id']; ?>"<?php endif; ?>
+                    class="<?php if ($item['class']): ?><?= $item['class']; ?><?php endif; ?><?php if ($item['megamenu']): ?> submenu mega-menu<?php endif; ?><?php if ($item['megamenu_class']): ?><?= $item['megamenu_class']; ?><?php endif; ?>">
                 <span class="<?= $item['class']; ?>"><?= $item['link']; ?></span>
                 <?php if ($item['megamenu']): ?>
                     <div class="mega-dropdown" role="menubar">
@@ -12,7 +13,8 @@
                 <?php endif; ?>
             </li>
         <?php elseif ($item['noLink']): ?>
-            <li class="<?php if ($item['class']): ?><?= $item['class']; ?><?php endif; ?><?php if ($item['megamenu']): ?> submenu mega-menu<?php endif; ?>">
+            <li<?php if ($item['megamenu_id']): ?> id="<?= $item['megamenu_id']; ?>"<?php endif; ?>
+                    class="<?php if ($item['class']): ?><?= $item['class']; ?><?php endif; ?><?php if ($item['megamenu']): ?> submenu mega-menu<?php endif; ?><?php if ($item['megamenu_class']): ?><?= $item['megamenu_class']; ?><?php endif; ?>">
                 <span class="<?= $item['class']; ?>"><?= $item['link']; ?></span>
                 <?php if ($item['megamenu']): ?>
                     <div class="mega-dropdown" role="menubar">
@@ -23,12 +25,13 @@
                 <?php endif; ?>
             </li>
         <?php else: ?>
-            <li class="<?php if ($item['class']): ?><?= $item['class']; ?><?php endif; ?><?php if ($item['megamenu']): ?> submenu mega-menu<?php endif; ?>">
+            <li<?php if ($item['megamenu_id']): ?> id="<?= $item['megamenu_id']; ?>"<?php endif; ?>
+                    class="<?php if ($item['class']): ?><?= $item['class']; ?><?php endif; ?><?php if ($item['megamenu']): ?> submenu mega-menu<?php endif; ?><?php if ($item['megamenu_class']): ?><?= $item['megamenu_class']; ?><?php endif; ?>">
                 <a href="<?= $item['href']; ?>" title="<?= $item['pageTitle'] ?: $item['title']; ?>"
                    class="<?php if ($item['class']): ?><?= $item['class'] ?><?php endif; ?><?php if ($item['megamenu']): ?> submenu mega-dropdown<?php endif; ?>"
                     <?php if ('' != $item['accesskey']): ?> accesskey="<?= $item['accesskey']; ?>"<?php endif; ?>
                     <?php if ($item['tabindex']): ?> tabindex="<?= $item['tabindex']; ?>"<?php endif; ?>
-                    <?php if ($item['nofollow']): ?> rel="nofollow"<?php endif; ?><?= $item['target']; ?>>
+                    <?= $item['target']; ?>>
                     <?= $item['link']; ?>
                 </a>
                 <?php if ($item['megamenu']): ?>
