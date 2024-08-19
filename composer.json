@@ -27,7 +27,7 @@
     "contao/core-bundle": "^5.3",
     "symfony/config": "^6.0",
     "symfony/dependency-injection": "^6.0",
-    "symfony/http-kernel": "^6.0"
+    "symfony/http-kernel": "^7.1"
   },
   "require-dev": {
     "contao/manager-plugin": "^2.3.1",
