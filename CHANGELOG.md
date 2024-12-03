@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.3](https://github.com/cgoIT/contao-megamenu-bundle/compare/v1.0.2...v1.0.3) (2024-12-03)
+
+
+### Bug Fixes
+
+* use Doctrine Schema Representation for db columns ([23ad087](https://github.com/cgoIT/contao-megamenu-bundle/commit/23ad08745d0417c76f0d675df892dd2a388c3a9d))
+
 ## [1.0.2](https://github.com/cgoIT/contao-megamenu-bundle/compare/v1.0.1...v1.0.2) (2024-03-27)
 
 
