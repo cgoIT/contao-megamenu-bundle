@@ -43,14 +43,14 @@ $GLOBALS['TL_DCA']['tl_page']['fields'] = array_merge(
         'exclude' => false,
         'inputType' => 'checkbox',
         'eval' => ['mandatory' => false, 'isBoolean' => true, 'submitOnChange' => true],
-        'sql' => "char(1) NOT NULL default ''",
+        'sql' => ['type' => 'string', 'length' => 1, 'fixed' => true, 'default' => ''],
     ]],
     ['mm_article' => [
         'label' => &$GLOBALS['TL_LANG']['tl_page']['mm_article'],
         'inputType' => 'picker',
         'foreignKey' => 'tl_article.title',
         'eval' => ['mandatory' => true, 'tl_class' => 'clr'],
-        'sql' => 'int(10) unsigned NOT NULL default 0',
+        'sql' => ['type' => 'integer', 'length' => 10, 'unsigned' => true, 'default' => 0],
         'relation' => ['type' => 'hasOne', 'load' => 'lazy'],
     ]],
     ['mm_cssID' => [
@@ -58,14 +58,14 @@ $GLOBALS['TL_DCA']['tl_page']['fields'] = array_merge(
         'exclude' => true,
         'inputType' => 'text',
         'eval' => ['tl_class' => 'w50', 'multiple' => true, 'size' => 2],
-        'sql' => "varchar(255) NOT NULL default ''",
+        'sql' => ['type' => 'string', 'length' => 255, 'default' => ''],
     ]],
     ['noLink' => [
         'label' => &$GLOBALS['TL_LANG']['tl_page']['noLink'],
         'exclude' => false,
         'inputType' => 'checkbox',
         'eval' => ['tl_class' => 'w50 m12', 'mandatory' => false, 'isBoolean' => true],
-        'sql' => "char(1) NOT NULL default ''",
+        'sql' => ['type' => 'string', 'length' => 1, 'fixed' => true, 'default' => ''],
     ]],
     $GLOBALS['TL_DCA']['tl_page']['fields'],
 );
