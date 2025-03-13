@@ -31,7 +31,6 @@
   },
   "require-dev": {
     "contao/manager-plugin": "^2.3.1",
-    "phpunit/phpunit": "^10.3",
     "terminal42/contao-build-tools": "dev-main"
   },
   "conflict": {
@@ -40,11 +39,6 @@
   "autoload": {
     "psr-4": {
       "Cgoit\\MegaMenuBundle\\": "src/"
-    }
-  },
-  "autoload-dev": {
-    "psr-4": {
-      "Cgoit\\MegaMenuBundle\\Tests\\": "tests/"
     }
   },
   "config": {
@@ -60,12 +54,10 @@
   },
   "scripts": {
     "all": [
-      "@unit-tests",
       "@cs-fixer",
       "@rector",
       "@phpstan",
       "@depcheck"
-    ],
-    "unit-tests": "@php vendor/bin/phpunit --colors=always"
+    ]
   }
 }
