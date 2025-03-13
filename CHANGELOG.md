@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.5](https://github.com/cgoIT/contao-megamenu-bundle/compare/v1.0.4...v1.0.5) (2025-03-13)
+
+
+### Miscellaneous Chores
+
+* fix build-tools errors ([e00a6ef](https://github.com/cgoIT/contao-megamenu-bundle/commit/e00a6efbb3454b08a919c773bde974b7d0112248))
+
 ## [1.0.4](https://github.com/cgoIT/contao-megamenu-bundle/compare/v1.0.3...v1.0.4) (2025-02-11)
 
 
