@@ -8,4 +8,4 @@
  * @license    LGPL-3.0-or-later
  */
 
-$GLOBALS['TL_LANG']['FMD']['megamenu'] = ['Megamenü', 'Ergänzt die normale Navigation um einen Artikelverweis.'];
+$GLOBALS['TL_LANG']['FMD']['megamenu'] = ['MegaMenu', 'Adds an article to the normal navigation.'];
