@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.6](https://github.com/cgoIT/contao-megamenu-bundle/compare/v1.0.5...v1.0.6) (2025-05-02)
+
+
+### Bug Fixes
+
+* translate into english ([#11](https://github.com/cgoIT/contao-megamenu-bundle/issues/11)) ([75e24d2](https://github.com/cgoIT/contao-megamenu-bundle/commit/75e24d2ed90a0618dc77344882fe94c67bf2c5f7))
+
 ## [1.0.5](https://github.com/cgoIT/contao-megamenu-bundle/compare/v1.0.4...v1.0.5) (2025-03-13)
 
 
