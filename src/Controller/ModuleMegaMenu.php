@@ -22,7 +22,6 @@ class ModuleMegaMenu extends ModuleNavigation
     /**
      * @return array<mixed>
      */
-    #[\Override]
     protected function compileNavigationRow(PageModel $objPage, PageModel $objSubpage, $subitems, $href): array
     {
         $row = parent::compileNavigationRow($objPage, $objSubpage, $subitems, $href);
