@@ -23,11 +23,11 @@
     "source": "https://github.com/cgoIT/contao-megamenu-bundle"
   },
   "require": {
-    "php": "^8.2 || ^8.3",
+    "php": "^8.2",
     "contao/core-bundle": "^5.3",
-    "symfony/config": "^6.0",
-    "symfony/dependency-injection": "^6.0",
-    "symfony/http-kernel": "^6.0"
+    "symfony/config": "^6.0 || ^7.3",
+    "symfony/dependency-injection": "^6.0 || ^7.3",
+    "symfony/http-kernel": "^6.0 || ^7.3"
   },
   "require-dev": {
     "contao/manager-plugin": "^2.3.1",
@@ -54,7 +54,7 @@
   },
   "scripts": {
     "all": [
-      "@cs-fixer",
+      "@ecs",
       "@rector",
       "@phpstan",
       "@depcheck"
