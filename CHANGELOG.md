@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.9](https://github.com/cgoIT/contao-megamenu-bundle/compare/v1.0.8...v1.0.9) (2026-03-27)
+
+
+### Miscellaneous Chores
+
+* integrate twig-cs-fixer ([8c3f246](https://github.com/cgoIT/contao-megamenu-bundle/commit/8c3f246a129b6a69f5976f2d205179b66b0bdb2d))
+
 ## [1.0.8](https://github.com/cgoIT/contao-megamenu-bundle/compare/v1.0.7...v1.0.8) (2026-03-27)
 
 
