@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.8](https://github.com/cgoIT/contao-megamenu-bundle/compare/v1.0.7...v1.0.8) (2026-03-27)
+
+
+### Miscellaneous Chores
+
+* update copyright header ([1ab71e1](https://github.com/cgoIT/contao-megamenu-bundle/commit/1ab71e1d84242172c379f0401e1ab931568f9bb2))
+
 ## [1.0.7](https://github.com/cgoIT/contao-megamenu-bundle/compare/v1.0.6...v1.0.7) (2025-08-19)
 
 
