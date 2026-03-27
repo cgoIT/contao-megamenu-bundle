@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.7](https://github.com/cgoIT/contao-megamenu-bundle/compare/v1.0.6...v1.0.7) (2025-08-19)
+
+
+### Miscellaneous Chores
+
+* remove override annotation to omit shadow dependency with php 8.2 ([1018586](https://github.com/cgoIT/contao-megamenu-bundle/commit/10185868268df34544a12a755d994b5bb53aeddd))
+* update version contraints ([6624959](https://github.com/cgoIT/contao-megamenu-bundle/commit/662495973e2e4f2dbf9b1ad0ab542706b59154b3))
+
 ## [1.0.6](https://github.com/cgoIT/contao-megamenu-bundle/compare/v1.0.5...v1.0.6) (2025-05-02)
 
 
